@@ -53,8 +53,8 @@
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+<nav class="navbar navbar-default navbar-inverted navbar-fixed-top">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hcbeerfest-navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -65,8 +65,37 @@
       <a class="navbar-brand" href="{{ path('<front>') }}">{{ page.branding }}</a>
     </div>
 
-    <div class="collapse navbar-collapse" id="hcbeerfest-navbar-collapse">
+    <div class="collapse navbar-collapse navbar-right" id="hcbeerfest-navbar-collapse">
       {{ page.navigation }}
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1><a href="{{ path('<front>') }}">High Country Beer Fest</a></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<nav id="navbar-wrapper" class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <p class="navbar-brand" id="navbar-description">Benefit/Fundraiser for the ASU Fermentation Sciences</p>
+    </div>
+    <div class="hidden-xs">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="first"><a href="/contact" title="Contact us"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+        <li><a href="https://twitter.com/hcbeerfest" title="Follows us on Twitter"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+        <li><a href="https://www.facebook.com/hcbeerfest" title="Like us on Facebook"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+        <li class="last"><a href="/user" title="Your account"><i class="fa fa-user fa-3x"></i></a></li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -77,3 +106,87 @@
   {{ page.content }}
 {% endblock %}
 
+<div id="video-wrapper" class="wrapper wrapper-inverse">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="video-wrapper">
+          <iframe src="//player.vimeo.com/video/95663874" width="100%" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h1 class="heading">The High Country Beer Fest is a celebration of craft beer from around the region and the world.</h1>
+        <p>Come sample outstanding beers and delicious food in the beautiful high country of North Carolina. Educational seminars will cover aspects of beer tasting, brewing, and food pairing.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about-wrapper" class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="">
+          <h1 class="heading text-center">Want to serve your beer?</h1>
+          <p class="lead text-center">We're not accepting brewery registrations at the moment, check back soon!</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <div class="">
+          <h1 class="heading text-center">Do you want to be a sponsor?</h1>
+          <p class="lead text-center">We're not accepting sponsor registrations at the moment, check back soon!</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <div class="volunteer-wrapper">
+          <h1 class="heading text-center">Get Involved!</h1>
+          <p class="lead text-center">We'd love to have your help putting on this festival!</p>
+
+          <p class="text-center">
+            <a href="http://www.signupgenius.com/go/10c054baaaf29a0f94-2016/" class="btn-success btn btn-lg" data-ga-event="" data-ga-category="volunteer_link_click" data-ga-label="volunteer" data-ga-action="register">
+              I'd like to volunteer my time
+            </a>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<footer id="footer-wrapper" class="wrapper wrapper-inverse">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="lead">© High Country Beer Fest 2017. All rights reserved.</p>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <p>The High Country Beer Fest is hosted by <a href="http://ivorytowerscience.com/" title="Ivory Tower, Inc.">Ivory Tower, Inc.</a>, a research based non-profit that directly supports student scholarships and academic research in Fermentation Sciences at ASU.</p>
+        <p>This is a 100% non-profit event. Our primary beneficiary of the event is <a href="http://fermentation.appstate.edu/" title="ASU Fermentation Sciences">ASU Fermentation Sciences</a>, but we also support other local non-profit organizations, including <a href="http://www.highcountrylocalfirst.org/" title="High Country Local First">High Country Local First</a>, <a href="http://www.highcountrymommies.com/" title="High Country Mommies">High Country Mommies</a>, <a href="http://www.middleforkgreenway.org/">Blue Ridge Conservancy-Middle Fork Greenway Association</a>, <a href="http://mountainalliance.org/">The Mountain Alliance</a>, and <a href="http://ivorytowerscience.com/" title="Ivory Tower, Inc">Ivory Tower, Inc</a>.</p>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <h3>Get involved</h3>
+        <ul class="nav nav-stacked nav-pills">
+          <li><a href="http://www.signupgenius.com/go/10c054baaaf29a0f94-2016/">Want to volunteer?</a></li>
+          <li><a href="/breweries/register">Want to register as a brewery?</a></li>
+          <li><a href="/contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <h3>Let's connect</h3>
+        <ul class="nav nav-stacked nav-pills">
+          <li><a href="https://twitter.com/hcbeerfest"><i class="fa fa-twitter-square fa-2x"></i> Follow us on Twitter</a></li>
+          <li><a href="https://www.facebook.com/hcbeerfest"><i class="fa fa-facebook-square fa-2x"></i> Like us on Facebook</a></li>
+          <li><a href="https://github.com/HighCountryBeerFest"><i class="fa fa-github-square fa-2x"></i> Fork us on Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
