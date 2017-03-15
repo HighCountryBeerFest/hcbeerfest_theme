@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the High Country Beer Fest theme.
+
+hcbeerfest_settings.settings:
+  type: theme_settings
+  label: 'hcbeerfest_theme settings'
