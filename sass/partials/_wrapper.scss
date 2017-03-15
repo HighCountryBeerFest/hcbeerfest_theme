@@ -1,0 +1,22 @@
+.wrapper {
+  background-color: $white;
+  padding: {
+    top: 100px;
+    bottom: 100px;
+  }
+}
+
+.wrapper-inverse {
+  background-color: transparent !important;
+  color: $white;
+  
+  a,
+  a:link {
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #00526e;
+  }
+}
