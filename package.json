@@ -1,0 +1,11 @@
+{
+  "name": "hcbeerfest_theme",
+  "version": "1.0.0",
+  "description": "A theme for the High Country Beer Festival",
+  "author": "Zach Seifts",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
