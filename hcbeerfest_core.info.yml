@@ -8,7 +8,7 @@ package: 'Bootstrap'
 
 regions:
   branding: 'Branding'
-  primary_menu: 'Primary Menu'
+  navigation: 'Navigation'
   messages: 'Messages'
   content: 'Content'
 
