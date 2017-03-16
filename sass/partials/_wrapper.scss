@@ -17,6 +17,10 @@
   }
 
   a:hover {
-    color: #00526e;
+    color: $grey;
+  }
+
+  .lead {
+    color: $white;
   }
 }

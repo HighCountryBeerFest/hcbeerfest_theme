@@ -2,12 +2,31 @@
   height: 100%;
   max-height: 900px;
   background-image: url('../images/header-img-1.jpg');
-  padding: 80px 0 80px 0;
-  margin-bottom: 0;
+  margin: {
+    bottom: 0px;
+  }
+  padding: {
+    top: 55px;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
+  }
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-}
 
+  .path-about & {
+    background-image: url('../images/beerfest-hipster-filter-bw.jpg');
+  }
+
+  .path-frontpage & {
+    padding: {
+      top: 125px;
+      bottom: 80px;
+      left: 0px;
+      right: 0px;
+    }
+  }
+}
