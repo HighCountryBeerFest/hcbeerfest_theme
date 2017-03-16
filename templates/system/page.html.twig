@@ -99,6 +99,18 @@
   </div>
 </nav>
 
+{% if not is_front %}
+<div id="buy-ticketes-wrapper" class="wrapper wrapper-short wrapper-loud">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="lead">Order your tickets: <a class="" href="#">VIP</a> | General Admission | Designated Driver</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 {# Content #}
 {% block content %}
   <a id="main-content"></a>

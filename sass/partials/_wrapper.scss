@@ -6,6 +6,32 @@
   }
 }
 
+.wrapper-short {
+  padding: {
+    top: 15px;
+    bottom: 15px;
+  }
+}
+
+.wrapper-loud {
+  background-color: $orange;
+  color: $black;
+  font-weight: bold;
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  .lead {
+    color: $black;
+    font-weight: bold;
+  }
+}
+
 .wrapper-inverse {
   background-color: transparent !important;
   color: $white;
