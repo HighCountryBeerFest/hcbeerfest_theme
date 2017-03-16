@@ -127,20 +127,53 @@
       <div class="col-xs-12 col-md-4">
         <div class="">
           <h1 class="heading text-center">Want to serve your beer?</h1>
-          <p class="lead text-center">We're not accepting brewery registrations at the moment, check back soon!</p>
+          {% if brewery_registration_active %}
+            <p class="lead text-center">
+              We'd love to have your beer! We're looking for craft breweries who want to participate in this year's High Country Beer Fest.
+            </p>
+            <p class="text-center">
+              <a href="/breweries/register"
+                 class="btn-success btn btn-lg"
+                 data-ga-event
+                 data-ga-category="brewery_link_click"
+                 data-ga-label="brewery"
+                 data-ga-action="register">
+                I'd like to register my brewery
+              </a>
+            </p>
+          {% else %}
+            <p class="lead text-center">We're not accepting brewery registrations at the moment, check back soon!</p>
+          {% endif %}
         </div>
       </div>
 
       <div class="col-xs-12 col-md-4">
         <div class="">
           <h1 class="heading text-center">Do you want to be a sponsor?</h1>
-          <p class="lead text-center">We're not accepting sponsor registrations at the moment, check back soon!</p>
+          {% if sponsor_registration_active %}
+            <p class="lead text-center">
+              We have plenty of sponsorship opportunities, contact us and we'll let you know how you can help out.
+            </p>
+            <p class="text-center">
+              <a href="/sponsors/register"
+                 class="btn-success btn btn-lg"
+                 data-ga-event
+                 data-ga-category="sponsor_link_click"
+                 data-ga-label="sponsor"
+                 data-ga-action="register">
+                I'd like to sponsor the Beer Fest
+              </a>
+            </p>
+          {% else %}
+            <p class="lead text-center">We're not accepting sponsor registrations at the moment, check back soon!</p>
+          {% endif %}
         </div>
       </div>
 
       <div class="col-xs-12 col-md-4">
         <div class="volunteer-wrapper">
           <h1 class="heading text-center">Get Involved!</h1>
+          {% if volunteer_registration_active %}
           <p class="lead text-center">We'd love to have your help putting on this festival!</p>
 
           <p class="text-center">
@@ -148,6 +181,9 @@
               I'd like to volunteer my time
             </a>
           </p>
+          {% else %}
+            <p class="lead text-center">We're not accepting volunteer registrations at the moment, check back soon!</p>
+          {% endif %}
 
         </div>
       </div>

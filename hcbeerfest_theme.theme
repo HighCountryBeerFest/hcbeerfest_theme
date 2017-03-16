@@ -5,3 +5,17 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements hook_preprocess_page();
+ */
+function hcbeerfest_theme_preprocess_page(&$variables) {
+  $registration_types = array(
+    'brewery',
+    'sponsor',
+    'volunteer',
+  );
+  foreach ($registration_types as $type) {
+    $variables[$type . '_registration_active'] = \Drupal::state()->get('hcbeerfest_core_registration_' . $type);
+  }
+}
