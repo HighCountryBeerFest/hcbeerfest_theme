@@ -15,3 +15,4 @@ regions:
 libraries:
   - 'hcbeerfest_theme/global-styling'
   - 'hcbeerfest_theme/font-awesome'
+  - 'hcbeerfest_theme/bootswatch-yeti'

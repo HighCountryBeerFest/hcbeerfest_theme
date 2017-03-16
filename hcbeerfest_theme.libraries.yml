@@ -15,3 +15,14 @@ font-awesome:
     theme:
       //maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css: { type: external, minified: true }
 
+bootswatch-yeti:
+  remote: https://bootswatch.com/
+  version: 3.3.7
+  license:
+    name: MIT
+    url: https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE
+    gpl-compatible: true
+  css:
+    theme:
+      //maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css: { type: external, minified: true }
+
