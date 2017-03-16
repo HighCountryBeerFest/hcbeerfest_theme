@@ -1,7 +1,10 @@
 @import "modules/variables";
+@import "modules/mixins";
 
 @import "partials/typography";
 @import "partials/navbar";
 @import "partials/body";
 @import "partials/wrapper";
 @import "partials/header";
+
+@import "pages/about";

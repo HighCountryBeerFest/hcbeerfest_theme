@@ -1,0 +1,16 @@
+@mixin full-width-image() {
+  height: 100%;
+  max-height: 900px;
+  margin-bottom: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+
+  a,
+  .lead {
+    color: $white;
+  }
+}

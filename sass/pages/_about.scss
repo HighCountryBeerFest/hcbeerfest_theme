@@ -1,0 +1,19 @@
+.path-about {
+  #page-title {
+    display: none;
+  }
+
+  #about-wrapper {
+    margin-bottom: 0px;
+  }
+
+  #join-wrapper {
+    @include full-width-image();
+    background-image: url('../images/crowd.jpg');
+  }
+
+  #exit-wrapper {
+    @include full-width-image();
+    background-image: url('../images/statue.jpg');
+  }
+}
